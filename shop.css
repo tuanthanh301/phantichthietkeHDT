@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.show-on-mobile {
+    display: none;
+}
+.header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+}
+
+.header-menu {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-menu {
+    width: 5rem;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+}
+
+.btn-menu:hover {
+    cursor: pointer;
+}
+
+.list-menu {
+    display: none;
+    width: 20rem;
+    height: 10rem;
+    position: absolute;
+    top: 4em;
+    left: 0;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    width: 100%;
+    height: 10%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link-logo {
+    cursor: pointer;
+    width: 400px;
+    height: 100%;
+    position: sticky;
+    z-index: 1;
+
+}
+
+.btn-logo {
+    width: 100%;
+    height: 100%;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.header-btn {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header-btn_right {
+    width: 42%;
+    height: 50%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.login:hover {
+    color: rgb(161, 161, 161);
+}
+
+.cart {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.ADD {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.price-detail{
+    color: #666;
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 16px;
+}
+.detail{
+    text-align: left;
+    font-size: 12px;
+    /* line-height: 1.43; */
+    color: #000;
+    font-family: Open Sans;
+    text-transform: uppercase;
+    box-sizing: border-box;   
+}
+.ulDetails{ 
+    margin-top:10px;
+    width: 100%;
+    height: 100%;
+}
+.x{
+    font-family: Open Sans;
+    font-size: 12px;
+    
+}
+
+
+/*  */
+.content {
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content-album {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-left{
+    margin-left: 6%;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-right{
+    width: 300px;
+    height: 100%;
+}
+.content-right_in4{
+    width: 300px;
+    height: 30%;
+    margin-top: 60%;
+}
+
+.btn_add {
+    width: 70%;
+    height: 50px;
+    background-image: url(btn.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn_add:active {
+    background-color: rgb(212, 212, 212);
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 500px;
+}
+
+/* The dots/bullets/indicators */
+.change {
+    width: 100%;
+    margin-left: 20%;
+}
+
+.dot {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+    background-image: url(chuyentrang.png);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-image: url(chuyentrangden.png);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width:1024px) {
+    
+}
